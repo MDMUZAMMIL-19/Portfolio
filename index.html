@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Muzammil Imam | RF & Electronics Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        engineeringDark: '#0B111E',
+                        engineeringCard: '#151F32',
+                        electricBlue: '#3B82F6',
+                        cyanAccent: '#06B6D4',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom Circuit Background Pathing for Hero */
+        .circuit-bg {
+            background-image: 
+                radial-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 0),
+                radial-gradient(rgba(6, 182, 212, 0.05) 2px, transparent 0);
+            background-size: 24px 24px, 48px 48px;
+            background-position: 0 0, 12px 12px;
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B111E;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #151F32;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3B82F6;
+        }
+    </style>
+</head>
+<body class="bg-engineeringDark text-slate-200 font-sans selection:bg-electricBlue selection:text-white">
+
+    <nav class="sticky top-0 z-40 bg-engineeringDark/80 backdrop-blur-md border-b border-slate-800/60 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0 flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-tr from-electricBlue to-cyanAccent rounded-lg flex items-center justify-center font-bold text-white shadow-lg shadow-electricBlue/20">MI</div>
+                    <span class="font-bold tracking-tight text-white hidden sm:block">Muzammil Imam</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4 text-sm font-medium">
+                        <a href="#about" class="text-slate-300 hover:text-electricBlue px-3 py-2 transition-colors">About</a>
+                        <a href="#skills" class="text-slate-300 hover:text-electricBlue px-3 py-2 transition-colors">Skills</a>
+                        <a href="#experience" class="text-slate-300 hover:text-electricBlue px-3 py-2 transition-colors">Experience</a>
+                        <a href="#projects" class="text-slate-300 hover:text-electricBlue px-3 py-2 transition-colors">Projects</a>
+                        <a href="#education" class="text-slate-300 hover:text-electricBlue px-3 py-2 transition-colors">Education</a>
+                        <a href="#contact" class="bg-electricBlue/10 hover:bg-electricBlue text-electricBlue hover:text-white border border-electricBlue/30 px-4 py-2 rounded-lg transition-all duration-200 shadow-sm">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 text-slate-400 hover:text-white focus:outline-none">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-engineeringDark border-b border-slate-800 px-4 pt-2 pb-4 space-y-1">
+            <a href="#about" class="block text-slate-300 hover:text-electricBlue py-2">About</a>
+            <a href="#skills" class="block text-slate-300 hover:text-electricBlue py-2">Skills</a>
+            <a href="#experience" class="block text-slate-300 hover:text-electricBlue py-2">Experience</a>
+            <a href="#projects" class="block text-slate-300 hover:text-electricBlue py-2">Projects</a>
+            <a href="#education" class="block text-slate-300 hover:text-electricBlue py-2">Education</a>
+            <a href="#contact" class="block text-electricBlue font-medium py-2">Contact</a>
+        </div>
+    </nav>
+
+    <header id="about" class="relative min-h-[90vh] flex items-center justify-center circuit-bg border-b border-slate-900 overflow-hidden py-20 px-4">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-electricBlue/10 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-cyanAccent/10 rounded-full blur-[100px] pointer-events-none"></div>
+        
+        <div class="max-w-4xl text-center relative z-10 space-y-6">
+            <div class="inline-flex items-center space-x-2 bg-slate-900/80 border border-slate-800 rounded-full px-4 py-1.5 text-xs font-medium text-slate-400 shadow-inner">
+                <span class="flex h-2 w-2 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                </span>
+                <span>Based in Southampton, UK</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white">
+                Hi, I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-electricBlue to-cyanAccent">Md Muzammil Imam</span>
+            </h1>
+                      
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                RF and Electronics Engineer completing an MSc in Electronics Engineering at the University of Southampton. Specialized in EM simulation platforms, microfluidic biosensors, sub-micron semiconductor device scaling, and advanced reconfigurable antenna architectures.
+            </p>
+            
+            <div class="pt-4 flex flex-wrap justify-center gap-4">
+                <a href="#contact" class="inline-flex items-center space-x-2 bg-gradient-to-r from-electricBlue to-cyanAccent hover:from-blue-600 hover:to-cyan-500 text-white font-semibold px-6 py-3 rounded-xl transition shadow-lg shadow-blue-500/10 hover:shadow-cyan-500/20">
+                    <span>Get in Touch</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="#projects" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white font-semibold px-6 py-3 rounded-xl transition">
+                    <span>View Technical Projects</span>
+                </a>
+            </div>
+            
+            <div class="pt-10">
+                <p class="text-xs font-semibold tracking-wider text-slate-500 uppercase mb-4">Focus Framework & Target Areas</p>
+                <div class="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
+                    <span class="text-xs bg-slate-900 border border-slate-800/80 rounded-md px-3 py-1 text-slate-400">Semiconductor Process & Integration</span>
+                    <span class="text-xs bg-slate-900 border border-slate-800/80 rounded-md px-3 py-1 text-slate-400">MEMS & Sensors</span>
+                    <span class="text-xs bg-slate-900 border border-slate-800/80 rounded-md px-3 py-1 text-slate-400">Photovoltaic Design</span>
+                    <span class="text-xs bg-slate-900 border border-slate-800/80 rounded-md px-3 py-1 text-slate-400">RF & Antenna Engineering</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-slate-900">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl flex items-center justify-center gap-3">
+                <i data-lucide="cpu" class="text-electricBlue w-8 h-8"></i> Core Engineering Skills
+            </h2>
+            <p class="mt-4 text-slate-400">Layered engineering expertise spanning electromagnetic validation, sub-micron physical layer design, and intelligent IoT systems.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-electricBlue/30 transition duration-300">
+                <div class="flex items-center space-x-3 mb-4 text-electricBlue">
+                    <i data-lucide="layers" class="w-5 h-5"></i>
+                    <h3 class="text-lg font-bold text-white">EM Simulation & TCAD</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">CST Microwave Studio</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Silvaco TCAD</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">COMSOL Multiphysics</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">MATLAB</span>
+                </div>
+            </div>
+
+            <div class="bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-electricBlue/30 transition duration-300">
+                <div class="flex items-center space-x-3 mb-4 text-cyanAccent">
+                    <i data-lucide="binary" class="w-5 h-5"></i>
+                    <h3 class="text-lg font-bold text-white">Semiconductor Physics</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">MOSFET Characterisation</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Device Scaling</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">FEOL/BEOL Flow</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Lithography (GenISys)</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">DMOS Fab</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">High-k Dielectrics</span>
+                </div>
+            </div>
+
+            <div class="bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-electricBlue/30 transition duration-300">
+                <div class="flex items-center space-x-3 mb-4 text-purple-400">
+                    <i data-lucide="activity" class="w-5 h-5"></i>
+                    <h3 class="text-lg font-bold text-white">MEMS & Sensors</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Microfluidic FEM</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Mass Transport Modelling</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Surface Passivation</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Biosensor Design</span>
+                </div>
+            </div>
+
+            <div class="bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-electricBlue/30 transition duration-300">
+                <div class="flex items-center space-x-3 mb-4 text-emerald-400">
+                    <i data-lucide="sun" class="w-5 h-5"></i>
+                    <h3 class="text-lg font-bold text-white">Photovoltaics</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">PC1D Simulation</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">ARC (SiNx/Al₂O₃)</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Surface Texturing</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">EQE/IQE Analysis</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Wafer Ray Tracer</span>
+                </div>
+            </div>
+
+            <div class="bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-electricBlue/30 transition duration-300">
+                <div class="flex items-center space-x-3 mb-4 text-amber-400">
+                    <i data-lucide="radio" class="w-5 h-5"></i>
+                    <h3 class="text-lg font-bold text-white">RF & Antenna Systems</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Patch Antennas</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">MIMO Array Design</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Metasurfaces (DCMS)</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Beamforming / RIS</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">5G/6G & THz Systems</span>
+                </div>
+            </div>
+
+            <div class="bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-electricBlue/30 transition duration-300">
+                <div class="flex items-center space-x-3 mb-4 text-rose-400">
+                    <i data-lucide="circuit-board" class="w-5 h-5"></i>
+                    <h3 class="text-lg font-bold text-white">Hardware & Systems</h3>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">PCB Design (Altium/Eagle)</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Verilog / FPGA</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Vivado</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">LTspice</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">ESP8266 IoT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 bg-slate-950/40 border-b border-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl flex items-center justify-center gap-3">
+                    <i data-lucide="briefcase" class="text-electricBlue w-8 h-8"></i> Research Experience
+                </h2>
+                <p class="mt-3 text-slate-400">Internship fellowships spent solving complex electromagnetic and hardware engineering problems.</p>
+            </div>
+
+            <div class="relative border-l-2 border-slate-800 ml-4 md:ml-32 space-y-12">
+                
+                <div class="relative pl-8 md:pl-10">
+                    <span class="absolute -left-[11px] top-1.5 bg-electricBlue w-5 h-5 rounded-full border-4 border-engineeringDark ring-4 ring-electricBlue/10"></span>
+                    
+                    <div class="hidden md:block absolute -left-[14rem] top-1 text-right w-44">
+                        <span class="text-sm font-bold text-white block">Jan 2025 – Jul 2025</span>
+                        <span class="text-xs text-slate-500 font-medium block">Dehradun, India</span>
+                    </div>
+
+                    <div class="bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-slate-700 transition">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <span class="md:hidden text-xs font-bold text-electricBlue block mb-2">Jan 2025 – Jul 2025 • Dehradun, India</span>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <h3 class="text-xl font-bold text-white">Research Intern</h3>
+                                    <span class="bg-emerald-500/10 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded">Outstanding Performance</span>
+                                </div>
+                                <p class="text-slate-300 font-medium text-sm mt-0.5">IRDE, DRDO, Ministry of Defence (Government of India)</p>
+                            </div>
+                            <a href="https://github.com/MDMUZAMMIL-19/Certificates/blob/main/DRDO(IRDE)%20Internship%20Certificate.pdf" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition shrink-0" title="View Internship Certificate">
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                        
+                        <ul class="mt-4 space-y-2 text-slate-400 text-sm list-disc pl-4">
+                            <li>Investigated advanced systems under practical training project: <span class="italic text-slate-300">"Advanced Reconfigurable Antenna Technologies from Sub-6 GHz to Terahertz"</span>.</li>
+                            <li>Designed a high-efficiency 4×4 MIMO array delivering &gt;70% radiation efficiency, &gt;20 dB inter-element isolation, and &gt;9 GHz bandwidth in CST Microwave Studio.</li>
+                            <li>Simulated Digitally Coded Metasurfaces (DCMS) targeting localized THz beam-steering and Radar Cross Section (RCS) reduction frameworks.</li>
+                            <li>Investigated advanced reconfigurable antenna baselines utilising fluidic/material adjustments like graphene layers and liquid gallium.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-10">
+                    <span class="absolute -left-[11px] top-1.5 bg-slate-700 w-5 h-5 rounded-full border-4 border-engineeringDark ring-4 ring-slate-800"></span>
+                    
+                    <div class="hidden md:block absolute -left-[14rem] top-1 text-right w-44">
+                        <span class="text-sm font-bold text-white block">May 2024 – Jul 2024</span>
+                        <span class="text-xs text-slate-500 font-medium block">Patna, India</span>
+                    </div>
+
+                    <div class="bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-slate-700 transition">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <span class="md:hidden text-xs font-bold text-electricBlue block mb-2">May 2024 – Jul 2024 • Patna, India</span>
+                                <div class="flex flex-wrap items-center gap-2">
+                                    <h3 class="text-xl font-bold text-white">Research Intern</h3>
+                                    <span class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded">Excellent Performance</span>
+                                </div>
+                                <p class="text-slate-300 font-medium text-sm mt-0.5">Indian Institute of Technology (IIT), Patna</p>
+                            </div>
+                            <a href="https://github.com/MDMUZAMMIL-19/Certificates/blob/main/IITP%20Internship%20Certificate.pdf" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition shrink-0" title="View Internship Certificate">
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                        
+                        <ul class="mt-4 space-y-2 text-slate-400 text-sm list-disc pl-4">
+                            <li>Completed a 70-day research track focused on: <span class="italic text-slate-300">"Coexistence Strategies for 5G and 6G: Technical and Regulatory Perspectives"</span>.</li>
+                            <li>Designed and optimized an elliptical patch antenna array providing a 2.51 GHz operational bandwidth and a 4.9 dB gain benchmark.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="relative pl-8 md:pl-10">
+                    <span class="absolute -left-[11px] top-1.5 bg-slate-700 w-5 h-5 rounded-full border-4 border-engineeringDark ring-4 ring-slate-800"></span>
+                    
+                    <div class="hidden md:block absolute -left-[14rem] top-1 text-right w-44">
+                        <span class="text-sm font-bold text-white block">Jun 2023 – Jul 2023</span>
+                        <span class="text-xs text-slate-500 font-medium block">Roorkee, India</span>
+                    </div>
+
+                    <div class="bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 shadow-sm hover:border-slate-700 transition">
+                        <div class="flex items-start justify-between gap-4">
+                            <div>
+                                <span class="md:hidden text-xs font-bold text-electricBlue block mb-2">Jun 2023 – Jul 2023 • Roorkee, India</span>
+                                <h3 class="text-xl font-bold text-white">Research Intern</h3>
+                                <p class="text-slate-300 font-medium text-sm mt-0.5">Indian Institute of Technology (IIT), Roorkee</p>
+                            </div>
+                            <a href="https://github.com/MDMUZAMMIL-19/Certificates/blob/main/Internship%20Certificate.pdf" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition shrink-0" title="View Internship Certificate">
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+                        </div>
+                        
+                        <ul class="mt-4 space-y-2 text-slate-400 text-sm list-disc pl-4">
+                            <li>Conducted a comprehensive simulation study titled: <span class="italic text-slate-300">"Simulation Study on Breast Cancer Detection using Phase Retrieval in Microwave Imaging"</span>.</li>
+                            <li>Designed a custom uniplanar elliptical microstrip patch antenna variant (1.46 GHz BW) configured for Microwave Imaging (MWI) breast cancer detection systems.</li>
+                            <li>Gained domain insights into CST Microwave Studio core engines through over 100+ parametric configuration models.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 border-b border-slate-900">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl flex items-center justify-center gap-3">
+                <i data-lucide="folder-git-2" class="text-electricBlue w-8 h-8"></i> Advanced Academic Projects
+            </h2>
+            <p class="mt-3 text-slate-400">Interactive hardware simulation and characterization matrices executed throughout postgraduate modules.</p>
+            
+            <div class="mt-8 flex flex-wrap justify-center gap-2">
+                <button onclick="filterProjects('all')" id="btn-all" class="project-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide border transition-all duration-200 bg-electricBlue text-white border-electricBlue">All Projects</button>
+                <button onclick="filterProjects('semiconductor')" id="btn-semiconductor" class="project-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide border transition-all duration-200 bg-slate-900 text-slate-400 border-slate-800 hover:text-white hover:border-slate-700">Semiconductor</button>
+                <button onclick="filterProjects('mems')" id="btn-mems" class="project-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide border transition-all duration-200 bg-slate-900 text-slate-400 border-slate-800 hover:text-white hover:border-slate-700">MEMS / Sensors</button>
+                <button onclick="filterProjects('pv')" id="btn-pv" class="project-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide border transition-all duration-200 bg-slate-900 text-slate-400 border-slate-800 hover:text-white hover:border-slate-700">Photovoltaics</button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="project-container">
+            
+            <div class="project-card bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between group cursor-pointer hover:border-electricBlue/40 transition duration-300" data-category="semiconductor" onclick="openProjectModal(1)">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-mono font-bold tracking-wider text-slate-500">ELEC6201</span>
+                        <div class="flex space-x-1.5">
+                            <span class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded">Semiconductor</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start justify-between gap-2">
+                        <h3 class="text-lg font-bold text-white group-hover:text-electricBlue transition">MOSFET Characterisation & DMOS Fab</h3>
+                        <a href="https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6201.pdf" target="_blank" onclick="event.stopPropagation();" class="p-1.5 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition shrink-0" title="View Final Report PDF">
+                            <i data-lucide="file-text" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 line-clamp-3">Characterised 2N7000 N-MOSFET structural properties via precision source measure unit (SMU) instrumentation matrices. Extracted quantitative figures like threshold voltage, on resistance and forward conductance.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-electricBlue group-hover:translate-x-1 transition-transform">
+                    <span>Analyze Full Architecture Data</span>
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5 ml-1"></i>
+                </div>
+            </div>
+
+            <div class="project-card bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between group cursor-pointer hover:border-electricBlue/40 transition duration-300" data-category="semiconductor" onclick="openProjectModal(2)">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-mono font-bold tracking-wider text-slate-500">ELEC6256</span>
+                        <div class="flex space-x-1.5">
+                            <span class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded">Semiconductor</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start justify-between gap-2">
+                        <h3 class="text-lg font-bold text-white group-hover:text-electricBlue transition">TCAD MOSFET Scaling Simulation</h3>
+                        <a href="https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6256.pdf" target="_blank" onclick="event.stopPropagation();" class="p-1.5 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition shrink-0" title="View Final Report PDF">
+                            <i data-lucide="file-text" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 line-clamp-3">Executed multi-variable Silvaco ATHENA/ATLAS virtual process modeling iterations. Extracted target physical benchmarks of threshold voltage alongside an optimized base on-off ratio.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-electricBlue group-hover:translate-x-1 transition-transform">
+                    <span>Analyze Full Architecture Data</span>
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5 ml-1"></i>
+                </div>
+            </div>
+
+            <div class="project-card bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between group cursor-pointer hover:border-electricBlue/40 transition duration-300" data-category="pv" onclick="openProjectModal(3)">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-mono font-bold tracking-wider text-slate-500">ELEC6207</span>
+                        <div class="flex space-x-1.5">
+                            <span class="bg-emerald-500/10 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded">Photovoltaics</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start justify-between gap-2">
+                        <h3 class="text-lg font-bold text-white group-hover:text-electricBlue transition">Quantum Dot PV Enhancement</h3>
+                        <a href="https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6207.pdf" target="_blank" onclick="event.stopPropagation();" class="p-1.5 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition shrink-0" title="View Final Report PDF">
+                            <i data-lucide="file-text" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 line-clamp-3">Conducted spectroscopic structural mapping of CdSe/ZnS core-shell quantum dots, extracting bandgap variables. Modelled LDS, MEG, IBSC, and LSC paradigms.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-electricBlue group-hover:translate-x-1 transition-transform">
+                    <span>Analyze Full Architecture Data</span>
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5 ml-1"></i>
+                </div>
+            </div>
+
+            <div class="project-card bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between group cursor-pointer hover:border-electricBlue/40 transition duration-300" data-category="semiconductor" onclick="openProjectModal(4)">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-mono font-bold tracking-wider text-slate-500">ELEC6206</span>
+                        <div class="flex space-x-1.5">
+                            <span class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-2 py-0.5 rounded">Semiconductor</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start justify-between gap-2">
+                        <h3 class="text-lg font-bold text-white group-hover:text-electricBlue transition">Optical Lithography Simulation</h3>
+                        <a href="https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6206.pdf" target="_blank" onclick="event.stopPropagation();" class="p-1.5 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition shrink-0" title="View Final Report PDF">
+                            <i data-lucide="file-text" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 line-clamp-3">Simulated complete i-line projection lithography paths using GenISys Lab environments. Calculated precise boundaries including Exposure Latitude ($EL$) and Depth of Focus ($DOF$).</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-electricBlue group-hover:translate-x-1 transition-transform">
+                    <span>Analyze Full Architecture Data</span>
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5 ml-1"></i>
+                </div>
+            </div>
+
+            <div class="project-card bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between group cursor-pointer hover:border-electricBlue/40 transition duration-300" data-category="mems" onclick="openProjectModal(5)">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-mono font-bold tracking-wider text-slate-500">ELEC6204</span>
+                        <div class="flex space-x-1.5">
+                            <span class="bg-purple-500/10 text-purple-400 text-[10px] font-bold px-2 py-0.5 rounded">MEMS</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start justify-between gap-2">
+                        <h3 class="text-lg font-bold text-white group-hover:text-electricBlue transition">Microfluidic Biosensor COMSOL FEM</h3>
+                        <a href="https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6204.pdf" target="_blank" onclick="event.stopPropagation();" class="p-1.5 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition shrink-0" title="View Final Report PDF">
+                            <i data-lucide="file-text" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 line-clamp-3">3D finite element optimization of multi-layer microfluidic channels. Reduced localized depletion boundaries via advanced ellipsoidal geometries.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-electricBlue group-hover:translate-x-1 transition-transform">
+                    <span>Analyze Full Architecture Data</span>
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5 ml-1"></i>
+                </div>
+            </div>
+
+            <div class="project-card bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between group cursor-pointer hover:border-electricBlue/40 transition duration-300" data-category="pv" onclick="openProjectModal(6)">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-mono font-bold tracking-wider text-slate-500">ELEC3202</span>
+                        <div class="flex space-x-1.5">
+                            <span class="bg-emerald-500/10 text-emerald-400 text-[10px] font-bold px-2 py-0.5 rounded">Photovoltaics</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start justify-between gap-2">
+                        <h3 class="text-lg font-bold text-white group-hover:text-electricBlue transition">Silicon Solar Cell PC1D Optimization</h3>
+                        <a href="https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC3202.pdf" target="_blank" onclick="event.stopPropagation();" class="p-1.5 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition shrink-0" title="View Final Report PDF">
+                            <i data-lucide="file-text" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 line-clamp-3">Optimized a crystalline silicon ($c\text{-Si}$) base solar cell model inside PC1D platforms. Designed a hardware integration stack safely scaling conversion efficiency to 15.2%.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-electricBlue group-hover:translate-x-1 transition-transform">
+                    <span>Analyze Full Architecture Data</span>
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5 ml-1"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="education" class="py-20 bg-slate-950/40 border-b border-slate-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl flex items-center justify-center gap-3">
+                    <i data-lucide="graduation-cap" class="text-electricBlue w-8 h-8"></i> Academic Foundations
+                </h2>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-engineeringCard border border-slate-800/60 rounded-2xl p-6 relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-gradient-to-b from-electricBlue to-cyanAccent"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">MSc Electronics Engineering</h3>
+                            <p class="text-slate-300 font-medium text-sm">University of Southampton, UK</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="inline-block bg-slate-900 text-slate-400 text-xs px-3 py-1 rounded-md font-mono border border-slate-800">Ongoing Sep 2025</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-500 font-semibold mt-4 tracking-wider uppercase">Advanced Modules Handled</p>
+                    <p class="text-slate-400 text-sm mt-1 leading-relaxed">
+                        Microfabrication • Quantum Devices and Technology • Nanofabrication & Microscopy • Green Electronics • Microfluidics & Lab-on-a-Chip • Nanoelectronic Devices.
+                    </p>
+                </div>
+
+                <div class="bg-engineeringCard border border-slate-800/60 rounded-2xl p-6 relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-1.5 h-full bg-slate-800"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">BTech Electronics & Communication Engineering</h3>
+                            <p class="text-slate-300 font-medium text-sm">National Institute of Technology (NIT), Patna</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="inline-block bg-slate-900 text-slate-400 text-xs px-3 py-1 rounded-md font-mono border border-slate-800">Jul 2021 – Jun 2025</span>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex items-center space-x-2 text-xs">
+                        <span class="text-slate-500 font-bold">Performance Index:</span>
+                        <span class="bg-emerald-500/10 text-emerald-400 font-mono font-bold px-2 py-0.5 rounded">CGPA 7.81</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 bg-slate-900/50 border border-slate-800/80 rounded-2xl p-6">
+                <h4 class="text-sm font-bold text-white uppercase tracking-wider mb-6 flex items-center gap-2">
+                    <i data-lucide="award" class="text-cyanAccent w-4 h-4"></i> Verified Technical Certifications
+                </h4>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    
+                    <div class="flex items-center justify-between p-3.5 bg-engineeringCard border border-slate-800/60 rounded-xl hover:border-electricBlue/30 transition">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-electricBlue shrink-0 mt-0.5"></i>
+                            <div>
+                                <span class="text-sm text-slate-300 block font-medium">Advanced Antenna Design using CST</span>
+                                <span class="text-xs text-slate-500 block">Udemy • Sept 2024</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/MDMUZAMMIL-19/Certificates/blob/main/Advanced%20Antennas%20Design%20using%20CST.pdf" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition" title="View PDF Certificate">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3.5 bg-engineeringCard border border-slate-800/60 rounded-xl hover:border-electricBlue/30 transition">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-electricBlue shrink-0 mt-0.5"></i>
+                            <div>
+                                <span class="text-sm text-slate-300 block font-medium">Mastering CST Antenna Design</span>
+                                <span class="text-xs text-slate-500 block">Udemy • Sept 2024</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/MDMUZAMMIL-19/Certificates/blob/main/Mastering%20CST%20Antenna%20Design%20From%20Basics%20to%20Brilliance.pdf" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition" title="View PDF Certificate">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3.5 bg-engineeringCard border border-slate-800/60 rounded-xl hover:border-electricBlue/30 transition">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-electricBlue shrink-0 mt-0.5"></i>
+                            <div>
+                                <span class="text-sm text-slate-300 block font-medium">Altium Education PCB Basic Design</span>
+                                <span class="text-xs text-slate-500 block">Altium • July 2024</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/MDMUZAMMIL-19/Certificates/blob/main/Altium%20Education%20PCB%20Design%20Certificate.pdf" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition" title="View PDF Certificate">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3.5 bg-engineeringCard border border-slate-800/60 rounded-xl hover:border-electricBlue/30 transition">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-electricBlue shrink-0 mt-0.5"></i>
+                            <div>
+                                <span class="text-sm text-slate-300 block font-medium">PCB Design with Eagle CAD</span>
+                                <span class="text-xs text-slate-500 block">Udemy • July 2024</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/MDMUZAMMIL-19/Certificates/blob/main/Learn the Art and Science of PCB Design with Eagle.pdf" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition" title="View PDF Certificate">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3.5 bg-engineeringCard border border-slate-800/60 rounded-xl hover:border-electricBlue/30 transition">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-electricBlue shrink-0 mt-0.5"></i>
+                            <div>
+                                <div class="flex items-center space-x-1.5">
+                                    <span class="text-sm text-slate-300 block font-medium">Introduction to Internet of Things</span>
+                                    <span class="bg-amber-500/10 text-amber-400 text-[10px] font-bold px-1.5 py-0.5 rounded">Top 5% Topper</span>
+                                </div>
+                                <span class="text-xs text-slate-500 block">NPTEL (IIT Kharagpur) • Jan-Apr 2024 (Score: 91%)</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/MDMUZAMMIL-19/Certificates/blob/main/Introduction%20To%20Internet%20Of%20Things.pdf" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition" title="View PDF Certificate">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3.5 bg-engineeringCard border border-slate-800/60 rounded-xl hover:border-electricBlue/30 transition">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-electricBlue shrink-0 mt-0.5"></i>
+                            <div>
+                                <div class="flex items-center space-x-1.5">
+                                    <span class="text-sm text-slate-300 block font-medium">The Joy of Computing Using Python</span>
+                                    <span class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-1.5 py-0.5 rounded">Elite</span>
+                                </div>
+                                <span class="text-xs text-slate-500 block">NPTEL (IIT Madras) • Jul-Oct 2023 (Score: 81%)</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/MDMUZAMMIL-19/Certificates/blob/main/The%20Joy%20Of%20Computing%20Using%20Python.pdf" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition" title="View PDF Certificate">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3.5 bg-engineeringCard border border-slate-800/60 rounded-xl hover:border-electricBlue/30 transition">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-electricBlue shrink-0 mt-0.5"></i>
+                            <div>
+                                <div class="flex items-center space-x-1.5">
+                                    <span class="text-sm text-slate-300 block font-medium">Cloud Computing</span>
+                                    <span class="bg-blue-500/10 text-blue-400 text-[10px] font-bold px-1.5 py-0.5 rounded">Elite</span>
+                                </div>
+                                <span class="text-xs text-slate-500 block">NPTEL (IIT Kharagpur) • Jan-Apr 2024 (Score: 79%)</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/MDMUZAMMIL-19/Certificates/blob/main/Cloud%20Computing.pdf" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition" title="View PDF Certificate">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex items-center justify-between p-3.5 bg-engineeringCard border border-slate-800/60 rounded-xl hover:border-electricBlue/30 transition">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-electricBlue shrink-0 mt-0.5"></i>
+                            <div>
+                                <span class="text-sm text-slate-300 block font-medium">Introduction to Embedded System Design</span>
+                                <span class="text-xs text-slate-500 block">NPTEL (IIT Madras) • Jan-Apr 2024 (Score: 53%)</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/MDMUZAMMIL-19/Certificates/blob/main/Introduction to Embedded System Design.pdf" target="_blank" class="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition" title="View PDF Certificate">
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 max-w-4xl mx-auto px-4 text-center">
+        <div class="bg-gradient-to-b from-engineeringCard to-engineeringDark border border-slate-800 p-8 sm:p-12 rounded-3xl relative overflow-hidden shadow-2xl">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-1 bg-gradient-to-r from-transparent via-electricBlue to-transparent"></div>
+            
+            <h2 class="text-3xl font-extrabold text-white tracking-tight">Initiate Technical Collaboration</h2>
+            <p class="mt-4 text-slate-400 text-sm sm:text-base max-w-xl mx-auto">
+                Open to hardware simulation pipelines, process development engineering tracks, and industrial R&D positions across the UK or globally.
+            </p>
+            
+            <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="mailto:mozamilimam@gmail.com" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 px-6 py-3.5 rounded-xl font-medium text-white transition">
+                    <i data-lucide="mail" class="w-4 h-4 text-electricBlue"></i>
+                    <span>mozamilimam@gmail.com</span>
+                </a>
+                <a href="https://linkedin.com/in/mdmuzammil-imam" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center space-x-2.5 bg-electricBlue/10 hover:bg-electricBlue text-electricBlue hover:text-white border border-electricBlue/20 px-6 py-3.5 rounded-xl font-medium transition">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                    <span>Connect on LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-slate-900 text-center text-xs text-slate-600">
+        <p>&copy; 2026 Md Muzammil Imam. Engineered using Tailwind CSS.</p>
+    </footer>
+
+    <div id="project-modal" class="fixed inset-0 z-50 overflow-y-auto hidden bg-engineeringDark/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-engineeringCard border border-slate-800 max-w-2xl w-full rounded-2xl shadow-2xl overflow-hidden relative">
+            <button onclick="closeProjectModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white p-1 bg-slate-950 rounded-lg border border-slate-800">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+            <div class="p-6 sm:p-8" id="modal-content">
+                </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Target Role Arrays for Typewriter Effect
+        const roles = [
+            "RF & Antenna Engineer",
+            "Semiconductor Process Engineer",
+            "MEMS & Sensors Engineer",
+            "Photovoltaic Design Engineer",
+            "Electronics Engineer"
+        ];
+        let roleIdx = 0, charIdx = 0, isDeleting = false;
+        const typingSpeed = 100, erasingSpeed = 50, delayBetween = 2000;
+
+        function typeEffect() {
+            const currentRole = roles[roleIdx];
+            const targetEl = document.getElementById("typing-text");
+            
+            if (isDeleting) {
+                targetEl.textContent = currentRole.substring(0, charIdx - 1);
+                charIdx--;
+            } else {
+                targetEl.textContent = currentRole.substring(0, charIdx + 1);
+                charIdx++;
+            }
+
+            if (!isDeleting && charIdx === currentRole.length) {
+                isDeleting = true;
+                setTimeout(typeEffect, delayBetween);
+            } else if (isDeleting && charIdx === 0) {
+                isDeleting = false;
+                roleIdx = (roleIdx + 1) % roles.length;
+                setTimeout(typeEffect, 500);
+            } else {
+                setTimeout(typeEffect, isDeleting ? erasingSpeed : typingSpeed);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", () => setTimeout(typeEffect, 1000));
+
+        // Navigation Toggle Logic for Mobile Ecosystems
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+
+        // Project Filtering Subroutine
+        function filterProjects(category) {
+            const cards = document.querySelectorAll('.project-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+
+            // Active State Toggle
+            document.querySelectorAll('.project-filter-btn').forEach(btn => {
+                btn.className = "project-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide border transition-all duration-200 bg-slate-900 text-slate-400 border-slate-800 hover:text-white";
+            });
+            document.getElementById(`btn-${category}`).className = "project-filter-btn px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide border transition-all duration-200 bg-electricBlue text-white border-electricBlue";
+        }
+
+        // Expanded Project Data Store
+        const projectDatabase = {
+            1: {
+                title: "MOSFET Electrical Characterisation & DMOS Fabrication",
+                module: "ELEC6201 — Device Physics Stack",
+                tags: ["Semiconductor", "Device Physics", "SMU", "DMOS"],
+                file: "https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6201.pdf",
+                body: "Characterised 2N7000 N-MOSFET structural properties via precision source measure unit (SMU) instrumentation matrices. Extracted quantitative figures like threshold voltage, on resistance and forward conductance, verifying output profiles with minimal divergence against benchmark reference points. Documented cleanroom FEOL/BEOL fabrication tracks, evaluating substitute configuration structures, wide bandgap (WBG) compounds, and atomic layer thin film dynamics."
+            },
+            2: {
+                title: "MOSFET Simulation & Device Scaling",
+                module: "ELEC6256 — Process Modeling Suite",
+                tags: ["Silvaco TCAD", "Device Scaling", "Yield", "ITRS"],
+                file: "https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6256.pdf",
+                body: "Executed multi-variable Silvaco ATHENA/ATLAS virtual process modeling iterations. Extracted target physical benchmarks of threshold voltage alongside an optimized base on-off ratio accelerating from an early $1.78 \\times 10^7$ up to $6.11 \\times 10^7$. Successfully modeled threshold voltage roll-off, DIBL short-channel mechanics, and optimization paths matching strict International Technology Roadmap for Semiconductors (ITRS) scaling parameters."
+            },
+            3: {
+                title: "Quantum Dot Characterisation & PV Enhancement",
+                module: "ELEC6207 — Quantum Nanostructures",
+                tags: ["Quantum Dots", "Spectroscopy", "Photovoltaics", "MATLAB"],
+                file: "https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6207.pdf",
+                body: "Conducted spectroscopic structural mapping of CdSe/ZnS core-shell quantum dots, extracting bandgap variables. Modelled Luminescent Down Shifting (LDS), Multiple Exciton Generation (MEG), Intermediate Band Solar Cells (IBSC), and Luminescent Solar Concentrators (LSC) inside MATLAB script environments to capture overall short-circuit current gain improvements."
+            },
+            4: {
+                title: "Nanofabrication & Optical Lithography Simulation",
+                module: "ELEC6206 — Advanced Manufacturing",
+                tags: ["Lithography", "CD Control", "OPC", "Nanofabrication"],
+                file: "https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6206.pdf",
+                body: "Simulated complete i-line projection lithography paths using GenISys Lab environments. Calculated precise operational boundaries showing Exposure Latitude ($EL$) of $0.742$, Depth of Focus ($DOF$) of $0.691\\ \\mu\\text{m}$, and ideal sizing dosages at $2.485\\text{ mJ/cm}^2$. Optimized Bottom Anti-Reflective Coatings (BARC) down to $185\\text{ nm}$ alongside custom layout Serif-based Optical Proximity Correction (OPC) maps to shield critical gate dimensions."
+            },
+            5: {
+                title: "Microfluidic Biosensor Design — COMSOL FEM",
+                module: "ELEC6204 — Lab-on-Chip Ecosystems",
+                tags: ["MEMS", "COMSOL", "Lab-on-Chip", "Biosensor"],
+                file: "https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6204.pdf",
+                body: "3D finite element optimization of multi-layer microfluidic channels. Reduced localized depletion boundaries via advanced ellipsoidal geometries."
+            },
+            6: {
+                title: "Silicon Solar Cell Optimisation — PC1D",
+                module: "ELEC3202 — Photovoltaic Systems",
+                tags: ["Photovoltaics", "PC1D", "ARC", "Surface Texturing"],
+                file: "https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC3202.pdf",
+                body: "Optimized a crystalline silicon ($c\\text{-Si}$) base solar cell model inside PC1D platforms. Designed a complete hardware integration stack featuring front-side $SiN_x/Al_2O_3$ Double-Layer Anti-Reflective Coatings (DLAR), rear passivated dielectric layers ($SiO_2/Al$), and anisotropic random pyramid surface texturing arrays. Successfully scaled predicted Solar Energy Power Conversion Efficiency (PCE) benchmarks from an baseline 9% to 15.2%, backed by complete EQE/IQE analysis."
+            }
+        };
+
+        // Modal Lifecycle Controllers
+        function openProjectModal(id) {
+            const data = projectDatabase[id];
+            const modal = document.getElementById('project-modal');
+            const content = document.getElementById('modal-content');
+            
+            // Build dynamic tags
+            let tagsHtml = data.tags.map(t => `<span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded font-mono">${t}</span>`).join('');
+            
+            content.innerHTML = `
+                <div class="mb-2 text-xs font-mono font-bold text-electricBlue uppercase tracking-wider">${data.module}</div>
+                <div class="flex items-start justify-between gap-4 mb-4">
+                    <h3 class="text-2xl font-bold text-white">${data.title}</h3>
+                    <a href="${data.file}" target="_blank" class="inline-flex items-center space-x-1.5 text-xs font-semibold bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white px-3 py-2 rounded-lg transition shrink-0" title="View Full PDF Report">
+                        <i data-lucide="file-text" class="w-4 h-4"></i>
+                        <span>View Report</span>
+                    </a>
+                </div>
+                <div class="flex flex-wrap gap-1.5 mb-6">${tagsHtml}</div>
+                <p class="text-slate-300 text-sm leading-relaxed text-justify bg-slate-950/40 border border-slate-900 rounded-xl p-5 font-sans">${data.body}</p>
+                <div class="mt-6 flex justify-end">
+                    <button onclick="closeProjectModal()" class="text-xs font-semibold bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-400 hover:text-white px-4 py-2 rounded-lg transition">Close Window</button>
+                </div>
+            `;
+            
+            // Refresh icons inside modal
+            lucide.createIcons();
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('project-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
