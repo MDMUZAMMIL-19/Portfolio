@@ -171,6 +171,7 @@
                     <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Mass Transport Modelling</span>
                     <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Surface Passivation</span>
                     <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Biosensor Design</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Piezoresistive Interfaces</span>
                 </div>
             </div>
 
@@ -209,9 +210,9 @@
                 </div>
                 <div class="flex flex-wrap gap-2">
                     <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">PCB Design (Altium/Eagle)</span>
-                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Verilog / FPGA</span>
-                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Vivado</span>
-                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">LTspice</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">NI Multisim Circuit Design</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">Sallen-Key BPF Filters</span>
+                    <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">LTspice / Vivado</span>
                     <span class="bg-slate-900 text-slate-300 border border-slate-800 text-xs px-3 py-1 rounded-md font-mono">ESP8266 IoT</span>
                 </div>
             </div>
@@ -420,7 +421,7 @@
                             <i data-lucide="file-text" class="w-4 h-4"></i>
                         </a>
                     </div>
-                    <p class="text-slate-400 text-sm mt-2 line-clamp-3">Simulated complete i-line projection lithography paths using GenISys Lab environments. Calculated precise boundaries including Exposure Latitude ($EL$) and Depth of Focus ($DOF$).</p>
+                    <p class="text-slate-400 text-sm mt-2 line-clamp-3">Simulated complete i-line projection lithography paths using GenISys Lab environments. Calculated precise operational boundaries showing Exposure Latitude, Depth of Focus, and ideal sizing dosages.</p>
                 </div>
                 <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-electricBlue group-hover:translate-x-1 transition-transform">
                     <span>Analyze Full Architecture Data</span>
@@ -442,7 +443,7 @@
                             <i data-lucide="file-text" class="w-4 h-4"></i>
                         </a>
                     </div>
-                    <p class="text-slate-400 text-sm mt-2 line-clamp-3">3D finite element optimization of multi-layer microfluidic channels. Reduced localized depletion boundaries via advanced ellipsoidal geometries.</p>
+                    <p class="text-slate-400 text-sm mt-2 line-clamp-3">Designed and optimised a 3D microfluidic lab-on-a-chip biosensor in COMSOL (FEM), solving coupled Navier-Stokes and convection-diffusion equations to characterise analyte transport.</p>
                 </div>
                 <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-electricBlue group-hover:translate-x-1 transition-transform">
                     <span>Analyze Full Architecture Data</span>
@@ -465,6 +466,28 @@
                         </a>
                     </div>
                     <p class="text-slate-400 text-sm mt-2 line-clamp-3">Optimized a crystalline silicon ($c\text{-Si}$) base solar cell model inside PC1D platforms. Designed a hardware integration stack safely scaling conversion efficiency to 15.2%.</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-electricBlue group-hover:translate-x-1 transition-transform">
+                    <span>Analyze Full Architecture Data</span>
+                    <i data-lucide="chevron-right" class="w-3.5 h-3.5 ml-1"></i>
+                </div>
+            </div>
+
+            <div class="project-card bg-engineeringCard border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between group cursor-pointer hover:border-electricBlue/40 transition duration-300" data-category="mems" onclick="openProjectModal(7)">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <span class="text-xs font-mono font-bold tracking-wider text-slate-500">ELEC6203</span>
+                        <div class="flex space-x-1.5">
+                            <span class="bg-purple-500/10 text-purple-400 text-[10px] font-bold px-2 py-0.5 rounded">MEMS / Sensors</span>
+                        </div>
+                    </div>
+                    <div class="flex items-start justify-between gap-2">
+                        <h3 class="text-lg font-bold text-white group-hover:text-electricBlue transition">Piezoresistive Accelerometer Interface</h3>
+                        <a href="https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6203.pdf" target="_blank" onclick="event.stopPropagation();" class="p-1.5 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 hover:border-slate-700 transition shrink-0" title="Project Documentation">
+                            <i data-lucide="file-text" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 line-clamp-3">Designed and simulated a piezoresistive accelerometer interface circuit in NI Multisim based on the Measurement Specialties 3028 sensor, executing signal conditioning frameworks.</p>
                 </div>
                 <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center text-xs font-semibold text-electricBlue group-hover:translate-x-1 transition-transform">
                     <span>Analyze Full Architecture Data</span>
@@ -698,6 +721,8 @@
             const currentRole = roles[roleIdx];
             const targetEl = document.getElementById("typing-text");
             
+            if (!targetEl) return;
+            
             if (isDeleting) {
                 targetEl.textContent = currentRole.substring(0, charIdx - 1);
                 charIdx--;
@@ -756,7 +781,7 @@
                 module: "ELEC6256 — Process Modeling Suite",
                 tags: ["Silvaco TCAD", "Device Scaling", "Yield", "ITRS"],
                 file: "https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6256.pdf",
-                body: "Executed multi-variable Silvaco ATHENA/ATLAS virtual process modeling iterations. Extracted target physical benchmarks of threshold voltage alongside an optimized base on-off ratio accelerating from an early $1.78 \\times 10^7$ up to $6.11 \\times 10^7$. Successfully modeled threshold voltage roll-off, DIBL short-channel mechanics, and optimization paths matching strict International Technology Roadmap for Semiconductors (ITRS) scaling parameters."
+                body: "Executed multi-variable Silvaco ATHENA/ATLAS virtual process modeling iterations. Extracted target physical benchmarks of threshold voltage alongside an optimized base on-off ratio accelerating from an early 1.78 × 10⁷ up to 6.11 × 10⁷. Successfully modeled threshold voltage roll-off, DIBL short-channel mechanics, and optimization paths matching strict International Technology Roadmap for Semiconductors (ITRS) scaling parameters."
             },
             3: {
                 title: "Quantum Dot Characterisation & PV Enhancement",
@@ -766,25 +791,33 @@
                 body: "Conducted spectroscopic structural mapping of CdSe/ZnS core-shell quantum dots, extracting bandgap variables. Modelled Luminescent Down Shifting (LDS), Multiple Exciton Generation (MEG), Intermediate Band Solar Cells (IBSC), and Luminescent Solar Concentrators (LSC) inside MATLAB script environments to capture overall short-circuit current gain improvements."
             },
             4: {
-                title: "Nanofabrication & Optical Lithography Simulation",
-                module: "ELEC6206 — Advanced Manufacturing",
+                title: "Nanofabrication & Lithography Simulation",
+                module: "ELEC6206 — Advanced Manufacturing (2025)",
                 tags: ["Lithography", "CD Control", "OPC", "Nanofabrication"],
                 file: "https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6206.pdf",
-                body: "Simulated complete i-line projection lithography paths using GenISys Lab environments. Calculated precise operational boundaries showing Exposure Latitude ($EL$) of $0.742$, Depth of Focus ($DOF$) of $0.691\\ \\mu\\text{m}$, and ideal sizing dosages at $2.485\\text{ mJ/cm}^2$. Optimized Bottom Anti-Reflective Coatings (BARC) down to $185\\text{ nm}$ alongside custom layout Serif-based Optical Proximity Correction (OPC) maps to shield critical gate dimensions."
+                body: "Simulated complete i-line projection lithography paths using GenISys Lab environments. Calculated precise operational boundaries showing Exposure Latitude, Depth of Focus, and ideal sizing dosages at 2.485 mJ/cm². Optimized Bottom Anti-Reflective Coatings (BARC) down to 185 nm alongside custom layout Serif-based Optical Proximity Correction (OPC) maps to shield critical gate dimensions."
             },
             5: {
-                title: "Microfluidic Biosensor Design — COMSOL FEM",
-                module: "ELEC6204 — Lab-on-Chip Ecosystems",
+                title: "Microfluidic Biosensor Design & Optimisation (COMSOL)",
+                module: "ELEC6204 — Lab-on-Chip Ecosystems (2025)",
                 tags: ["MEMS", "COMSOL", "Lab-on-Chip", "Biosensor"],
                 file: "https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6204.pdf",
-                body: "3D finite element optimization of multi-layer microfluidic channels. Reduced localized depletion boundaries via advanced ellipsoidal geometries."
+                body: "Designed and optimised a 3D microfluidic lab-on-a-chip biosensor in COMSOL (FEM), solving coupled Navier-Stokes and convection-diffusion equations to characterise analyte transport and surface reaction dynamics.<br/><br/>Engineered ellipsoidal void geometry to constrict flow path and force streamlines closer to sensor surface — reducing depletion layer thickness, nearly doubling hydrodynamic pressure gradient, and achieving steady-state within 50 s.<br/><br/>Characterised reaction-limited vs diffusion-limited operation regimes, demonstrating linear sensor output across 100× analyte concentration range (1–100 mol/m³) with sensitivity factor S = Signal/Co.<br/><br/>Quantified the effect of diffusion coefficient (D = 2×10⁻⁹ to 2×10⁻¹⁵ m²/s) on sensor response, establishing design rules for robust biosensor operation independent of surface fouling."
             },
             6: {
                 title: "Silicon Solar Cell Optimisation — PC1D",
                 module: "ELEC3202 — Photovoltaic Systems",
                 tags: ["Photovoltaics", "PC1D", "ARC", "Surface Texturing"],
                 file: "https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC3202.pdf",
-                body: "Optimized a crystalline silicon ($c\\text{-Si}$) base solar cell model inside PC1D platforms. Designed a complete hardware integration stack featuring front-side $SiN_x/Al_2O_3$ Double-Layer Anti-Reflective Coatings (DLAR), rear passivated dielectric layers ($SiO_2/Al$), and anisotropic random pyramid surface texturing arrays. Successfully scaled predicted Solar Energy Power Conversion Efficiency (PCE) benchmarks from an baseline 9% to 15.2%, backed by complete EQE/IQE analysis."
+                body: "Optimized a crystalline silicon base solar cell model inside PC1D platforms. Designed a complete hardware integration stack featuring front-side SiNx/Al2O3 Double-Layer Anti-Reflective Coatings (DLAR), rear passivated dielectric layers (SiO2/Al), and anisotropic random pyramid surface texturing arrays. Successfully scaled predicted Solar Energy Power Conversion Efficiency (PCE) benchmarks from an baseline 9% to 15.2%, backed by complete EQE/IQE analysis."
+            },
+            7: {
+                title: "Piezoresistive Accelerometer Interface Circuit",
+                module: "ELEC6203 — Sensor Interface Stack",
+                tags: ["NI Multisim", "Signal Conditioning", "Instrumentation Amp", "Sallen-Key Filter"],
+                /* Updated JavaScript database link */
+                file: "https://github.com/MDMUZAMMIL-19/MSc-Projects/blob/main/ELEC6203.pdf",
+                body: "Designed and simulated a piezoresistive accelerometer interface circuit in NI Multisim based on the Measurement Specialties 3028 sensor, achieving 4.5 mV/g sensitivity using a Wheatstone full-bridge configuration.<br/><br/>Designed differential and instrumentation amplifiers using LMV321M5 op-amps to amplify sensor output to 100 ±5 mV/g sensitivity across a 100Ω load.<br/><br/>Designed a second-order Sallen-Key active band-pass filter (20–170 Hz) with ~−40 dB/decade roll-off for signal conditioning in a vibration measurement system.<br/><br/>Optimised system power consumption to 135.46 µA total current draw; further reduced BPF current by ~90% through impedance and capacitance scaling."
             }
         };
 
@@ -794,26 +827,24 @@
             const modal = document.getElementById('project-modal');
             const content = document.getElementById('modal-content');
             
-            // Build dynamic tags
             let tagsHtml = data.tags.map(t => `<span class="bg-slate-900 border border-slate-800 text-slate-300 text-xs px-2.5 py-1 rounded font-mono">${t}</span>`).join('');
             
             content.innerHTML = `
                 <div class="mb-2 text-xs font-mono font-bold text-electricBlue uppercase tracking-wider">${data.module}</div>
                 <div class="flex items-start justify-between gap-4 mb-4">
                     <h3 class="text-2xl font-bold text-white">${data.title}</h3>
-                    <a href="${data.file}" target="_blank" class="inline-flex items-center space-x-1.5 text-xs font-semibold bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white px-3 py-2 rounded-lg transition shrink-0" title="View Full PDF Report">
+                    <a href="${data.file}" target="_blank" class="inline-flex items-center space-x-1.5 text-xs font-semibold bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white px-3 py-2 rounded-lg transition shrink-0" title="View Documentation">
                         <i data-lucide="file-text" class="w-4 h-4"></i>
-                        <span>View Report</span>
+                        <span>View Document</span>
                     </a>
                 </div>
                 <div class="flex flex-wrap gap-1.5 mb-6">${tagsHtml}</div>
-                <p class="text-slate-300 text-sm leading-relaxed text-justify bg-slate-950/40 border border-slate-900 rounded-xl p-5 font-sans">${data.body}</p>
+                <div class="text-slate-300 text-sm leading-relaxed text-justify bg-slate-950/40 border border-slate-900 rounded-xl p-5 font-sans">${data.body}</div>
                 <div class="mt-6 flex justify-end">
                     <button onclick="closeProjectModal()" class="text-xs font-semibold bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-400 hover:text-white px-4 py-2 rounded-lg transition">Close Window</button>
                 </div>
             `;
             
-            // Refresh icons inside modal
             lucide.createIcons();
             
             modal.classList.remove('hidden');
